@@ -27,4 +27,32 @@
 
 # Back to the reading of BartonStutton
 * What is the difference between Q and V
-[Datascience StackExchange](https://datascience.stackexchange.com/questions/9832/what-is-the-q-function-and-what-is-the-v-function-in-reinforcement-learning#:~:text=The%20V%20function%20states%20what,under%20the%20policy%20%CF%80%20is.) is a nice place to exchange, you ca write formulas in Latex
+[Datascience StackExchange](https://datascience.stackexchange.com/questions/9832/what-is-the-q-function-and-what-is-the-v-function-in-reinforcement-learning) is a nice place to exchange, you ca write formulas in Latex
+
+# p 102
+## Policy iteration
+* The alogorithm is very interesting. We have 2 loops, 
+  * one for policy evaluation which returns _V(s)_ for each State s belonging to S for a policy $\pi$ 
+  * one for policy $\Pi(s)$ whic is the choice of a for each s $\in$ S
+    * if for one state the choice of a change (compared to old_action whic was $\pi(s)$ before the new calation) then $\Pi$ is said not to be stable and is replaced by the new Policy
+* don't forget the difference between __V__ and __q__ [Response 57 of that Stack Exchange Post](https://datascience.stackexchange.com/questions/9832/what-is-the-q-function-and-what-is-the-v-function-in-reinforcement-learning)
+* the solution of the exercises is directly under */home/jpmena/CONSULTANT/IA/Reinforcement-Learning-2nd-Edition-by-Sutton-Exercise-Solutions/Chapter 4/Solutions_to_Reinforcement_Learning_by_Sutton_Chapter_4_r5.pdf*
+
+# 105 Value Iteration
+## Algorithm
+* Delta is resetted to zero avec the evaluation of each s $\in$ S
+* We stop when the mas of the difference between the old sweep and the new sweep is lower than $\delta$
+
+# 108
+* MDP means Markov Decision Process
+* DP means : Dynamic programming
+# 109
+* [GPI for Markov Decision Process](https://arxiv.org/abs/2206.05809) G stands not for Geometric but for Generalized !!!
+## 110 Conclusion of chapter 4
+[Dynamic PRogramming in Markov Decision Process is explained from page 15 of that research paper](http://researchers.lille.inria.fr/~lazaric/Webpage/MVA-RL_Course14_files/notes-lecture-02.pdf)
+
+## 111
+* The definition of _boostraping_
+> That is, they update estimates on the basis of other estimates. We call this general idea bootstrapping.
+
+

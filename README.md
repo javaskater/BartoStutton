@@ -60,4 +60,47 @@ sudo apt-get install texmaker
 jpmena@LAPTOP-E2MJK1UO:~$ texmaker&
 [1] 8200
 ```
+## It is not enough
 
+* in the [Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) they say we need texlive in the path
+```bash
+jpmena@LAPTOP-E2MJK1UO:~/CONSULTANT/BartoStutton$ sudo apt install texlive
+[sudo] password for jpmena: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  texlive
+0 upgraded, 1 newly installed, 0 to remove and 138 not upgraded.
+Need to get 14.3 kB of archives.
+After this operation, 73.7 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 texlive all 2021.20220204-1 [14.3 kB]
+Fetched 14.3 kB in 0s (62.3 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Selecting previously unselected package texlive.
+(Reading database ... 268812 files and directories currently installed.)
+Preparing to unpack .../texlive_2021.20220204-1_all.deb ...
+Unpacking texlive (2021.20220204-1) ...
+Setting up texlive (2021.20220204-1) ...
+#texlive is not on the path
+jpmena@LAPTOP-E2MJK1UO:~/CONSULTANT/BartoStutton$ whereis texlive
+texlive: /usr/share/texlive
+```
+* It is not the right Tex, the right tex Live had already been installed
+```bash
+jpmena@LAPTOP-E2MJK1UO:~/CONSULTANT/BartoStutton$ tex --version
+TeX 3.141592653 (TeX Live 2022/dev/Debian)
+kpathsea version 6.3.4/dev
+Copyright 2021 D.E. Knuth.
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the TeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the TeX source.
+Primary author of TeX: D.E. Knuth.
+```
+* As I installed texlive-full the best thing to do is to use the command line to generate
+  * either a pdf
+  * or a hteml file !!!

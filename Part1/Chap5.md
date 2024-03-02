@@ -30,3 +30,14 @@
     * but the max under $\pi\prime$ might be greater than the max under $\pi$ alone
 # 125 
 ## Off policies
+# 126
+* the notation $A_{t:T-1} \sim \pi$ means that the choice of 
+  * $A_t$ when coming from $S_t$ (which brings to $S_{t+1}$)
+  * $A_{t+1}$ when coming from $S_{t+1}$ (which brings to $S_{t+2}$)
+  * until $A_{T-1}$ when coming from $S_{T-1}$ (which brings to $S_T$)
+* is all done using the politic $\Pi$
+* $Pr(A_t, S_{t+1}, A_{t+1}, S_{t+2}, ..., S_T | S_t) = \pi(A_t|S_t) \times p(S_{t+1}|A_t, S_t) \times Pr(A_{t+1}, S_{t+2}, ..., S_T | S_{t+1})$
+  * $p(S_{t+1}|A_t, S_t)$ if the probaility we reach $S_{t+1}$ under the hypothese we come from $S_t$ through action $A_t$ which itself is only $\pi(A_t|S_t)$ probable ! 
+* [MDP](https://builtin.com/machine-learning/markov-decision-process) or _Markov Decision Process_
+* Equation 5_4 I intorduced the coefficient inside the Expectation 
+  *  The value function is given in equation 3.12 page 80 [What $E_\pi$ means](https://stats.stackexchange.com/questions/373076/what-does-an-expectation-with-respect-to-a-policy-mean-in-the-reinforcement-lear) it is a mean on all the possible trajectoris from s ? 

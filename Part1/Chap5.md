@@ -40,4 +40,18 @@
   * $p(S_{t+1}|A_t, S_t)$ if the probaility we reach $S_{t+1}$ under the hypothese we come from $S_t$ through action $A_t$ which itself is only $\pi(A_t|S_t)$ probable ! 
 * [MDP](https://builtin.com/machine-learning/markov-decision-process) or _Markov Decision Process_
 * Equation 5_4 I intorduced the coefficient inside the Expectation 
-  *  The value function is given in equation 3.12 page 80 [What $E_\pi$ means](https://stats.stackexchange.com/questions/373076/what-does-an-expectation-with-respect-to-a-policy-mean-in-the-reinforcement-lear) it is a mean on all the possible trajectoris from s ? 
+  *  The value function is given in equation 3.12 page 80 [What $E_\pi$ means](https://stats.stackexchange.com/questions/373076/what-does-an-expectation-with-respect-to-a-policy-mean-in-the-reinforcement-lear) it is a mean on all the possible trajectoris from s ?
+  
+## Equation 5.4
+* The calculations of [$V\pi and Q_\pi$](https://datascience.stackexchange.com/questions/9832/what-is-the-q-function-and-what-is-the-v-function-in-reinforcement-learning)
+* $\pho$ is the division of the probabilty of _reaching T from t using the optimal policy_ by *reaching T from t using the befaviour policy*
+* $E_\pi$ if a sum of all probailities that $\pi$ generates ([Video](https://deeplizard.com/learn/video/eMxOGwbdqKY) says that $\pi$ if a probability distribution on all the actions that follow s)
+* [from the video](https://deeplizard.com/learn/video/eMxOGwbdqKY) the value function is the Expected return!
+  * Gt is called the Q-value
+* [from this site](https://deeplizard.com/learn/video/eMxOGwbdqKY) $\pi$ is a probability distribution over a $\in$ A(s)
+* In this [Stack Exchange Post](https://ai.stackexchange.com/questions/35915/how-do-we-estimate-the-value-of-a-stochastic-policy) it is explained how the Expectation is calculated (it is $\sum_{a \in A(s)}\pi(a|s)$)
+
+# 130
+## Exercice 5.5:
+* there is an error in multiplying 0.9 and 0.1 by $\frac{1}{2}$ 
+  * we don't find this $\frac{1}{2}$ in the las equality
